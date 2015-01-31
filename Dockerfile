@@ -6,5 +6,5 @@ RUN apt-get update &&\
     apt-get install -y node nginx-full &&\
     middleman build
 
-ADD build/default /etc/nginx/sites-available/default
-ADD build/nginx.conf /etc/nginx/nginx.conf
+ADD default /etc/nginx/sites-available/default
+ADD nginx.conf /etc/nginx/nginx.conf
