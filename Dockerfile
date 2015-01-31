@@ -2,6 +2,5 @@ FROM ruby:2.2.0-onbuild
 
 WORKDIR /usr/src/app
 
-RUN middleman build
-
-EXPOSE 80
+RUN apt-get install -y nodejs &&\
+    middleman build
