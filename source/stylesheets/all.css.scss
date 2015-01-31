@@ -11,6 +11,14 @@ h1,h2,h3,h4,h5 {
   font-family: 'Orbitron';
    }
 
+.fucking-heavy {
+  font-weight: 900;
+}
+
+.fucking-big {
+  font-size: 200%;
+}
+
 .outer-container {
   @include outer-container;
 }
@@ -28,4 +36,8 @@ h1,h2,h3,h4,h5 {
 
 .archive {
   @include span-columns(12);
+}
+
+.red {
+  color: red;
 }
