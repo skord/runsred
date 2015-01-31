@@ -8,3 +8,4 @@ RUN apt-get update &&\
 
 ADD default /etc/nginx/sites-available/default
 ADD nginx.conf /etc/nginx/nginx.conf
+CMD nginx
