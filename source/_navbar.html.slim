@@ -1,0 +1,19 @@
+header class="navigation" role="banner"
+  .navigation-wrapper
+    a href="/" class="logo"
+      ul
+        li.nav-link
+          span.orbitron.text-logo.white runs.
+          span.orbitron.text-logo.red red
+    a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu" MENU
+    nav role="navigation"
+      ul id="js-navigation-menu" class="navigation-menu show"
+        / li class="nav-link"
+        /   a href="javascript:void(0)" Made
+        li class="nav-link"
+          a href="what.html" What?
+    .navigation-tools
+      = link_to "https://twitter.com/mikedanko", class: 'twitter' do
+        i.fa.fa-twitter
+        span
+        '   / @mikedanko

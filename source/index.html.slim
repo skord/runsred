@@ -1,25 +1,26 @@
 ---
-title: runsred
+title: runsred main
 ---
 
-div.outer-container
-  h1.center
-    span.fucking-big runs
-    span.red.fucking-big .red
-  p.center Whatever it is that #{link_to '@mikedanko','http://mikedanko.me'} feels like doing. My Daily Standup, unfiltered.
-  .row
-    .today
-      h2 today
-      ul
-        li= link_to 'This docker middleman thing', "https://github.com/skord/runsred"
-        li Having a fucking pottymouth.
-        li Some #{link_to "OpenSCAP", "http://www.open-scap.org/page/Main_Page"} shit. Finding stupid things.
-        li The runs.red Minecraft Server. Go ahead, connect and break and build things.
-    .tomorrow
-      h2 tomorrow
-      ul
-        li Making a #{link_to 'liquidsoap', "http://liquidsoap.fm/index.html"} radio station with the kids. Record some jingles and stuff.
-  .archive
-    h2 archive
-    ul
-      li Really, a whole bunch of shit.
+p.center Whatever it is that #{link_to '@mikedanko','http://mikedanko.me'} feels like doing. My Daily Standup, unfiltered.
+.flex-boxes
+  a href="javascript:void(0)" class="flex-box flex-box-pending"
+    i.fa.fa-microphone
+    h1 class="flex-title" runsred fm
+    p Pending the soap
+  a href="http://liquidsoap.fm/index.html" class="flex-box"
+    i.fa.fa-microphone
+    h1 class="flex-title" Liquid Soap
+    p Looking into this as a radio framework. Kids want to make a radio station today, so a little reading first.
+  a href="https://github.com/skord/runsred" class="flex-box"
+    i.fa.fa-github
+    h1 class="flex-title" Docker Middleman Build
+    p This site actually.
+  a href="http://www.open-scap.org/page/Main_Page" class="flex-box"
+    i.fa.fa-search
+    h1 class="flex-title" OpenSCAP
+    p Been playing with this as a way of scanning my Docker images for potential issues before deploying them.
+  a href="javascript:void(0)" class="flex-box"
+    i.fa.fa-tree
+    h1 class="flex-title" Minecraft Server
+    p Punching trees, right here at runs.red. Requires whitelisting since my kids are on it here and there. @ me for access.

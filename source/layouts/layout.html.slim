@@ -9,7 +9,10 @@ html
 
     = stylesheet_link_tag "normalize", "all"
     link href='http://fonts.googleapis.com/css?family=Orbitron:400,900|Open+Sans:400,300,700' rel='stylesheet' type='text/css'
+    link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
     = javascript_include_tag  "all"
 
   body class=page_classes
-    = yield
+    =partial 'navbar'
+    .outer-container
+      = yield
