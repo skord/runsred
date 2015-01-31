@@ -1,10 +1,7 @@
-FROM octohost/middleman-nginx
+FROM ruby:2.2.0-onbuild
 
-WORKDIR /srv/www
+WORKDIR /usr/src/app
 
-ADD . /srv/www/
 RUN middleman build
 
 EXPOSE 80
-
-CMD nginx
