@@ -21,7 +21,7 @@ server {
   listen 80;
   server_name maps.runs.red;
   location / {
-    http://backend;
+    http://maps;
   }
 
 }
