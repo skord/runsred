@@ -13,7 +13,7 @@ server {
 }
 
 upstream maps {
-  server 127.0.0.1:18080;
+  server runs.red:18080;
 }
 
 server {
