@@ -12,6 +12,16 @@ server {
     }
 }
 
+server {
+  listen 80;
+  root /usr/src/madecancermybitch;
+  index index.html;
+  server_name madecancermybitch.com;
+  location / {
+    try_files $uri $uri/ /index.html;
+  }
+}
+
 upstream maps {
   server runs.red:18080;
 }

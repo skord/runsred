@@ -1,5 +1,7 @@
 FROM ruby:2.2.0-onbuild
 
+ADD madecancermybitch /usr/src/madecancermybitch
+
 WORKDIR /usr/src/app
 
 RUN apt-get update &&\
